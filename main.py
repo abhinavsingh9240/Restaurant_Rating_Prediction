@@ -81,7 +81,7 @@ def predictor(**kwargs):    #Model and Encoder
 
 
 if __name__ == "__main__":
-    if not os.isdir("logs/"):
+    if not os.path.isdir("logs/"):
         os.mkdir("logs")
     logfile_name = "logs/LOG" + time.strftime("%y%m%d%H%M%S") + ".log"
     logging.basicConfig(filename=logfile_name, filemode="w", level=logging.INFO,
